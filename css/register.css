@@ -1,0 +1,115 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+}
+
+.profile-pic{
+    margin-top: 10px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.form-group{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:10px;
+}
+
+.form-group label{
+    font-size: 0.9em;
+    display: block;
+    align-self: flex-start;
+}
+
+#suggession {
+    display: block;  
+    font-size: 0.7em; 
+    color: #666; 
+    margin-top: 5px; 
+}
+
+input[type="file"]{
+    display: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin: 0px 20px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type="file"] + label{
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    align-self: center;
+    cursor: pointer;
+    font-weight: 700;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+@media(max-width:500px) {
+    .container{
+        width: 80%;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .form-row{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
